@@ -1,0 +1,59 @@
+$width: 100px;
+$height: 100px;
+
+div.character-container {
+  width: $width;
+  height: $height;
+  color: white;
+  position: relative;
+  text-align: center;
+  border: 3px solid black;
+  margin: 4px;
+
+  &.golden {
+    border: 3px solid gold;
+  }
+
+  .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .stats {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      span {
+        &.attack {
+          background-color: gold;
+        }
+        &.health {
+          background-color: crimson;
+        }
+        color: black;
+        width: 32px;
+        height: 32px;
+        border: 2px solid black;
+        border-radius: 50%;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .no-character {
+    background-color: slategray;
+    width: $width;
+    height: $height;
+  }
+
+  img {
+    width: $width;
+    height: $height;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,15 @@
+<div class="character-container" [class.golden]="character?.golden" (click)="openCharacterSelect()">
+  <div *ngIf="character" class="h100">
+    <div class="data">
+      <span>{{character.name}}</span>
+      <div class="stats">
+        <span class="attack">{{character.attack}}</span>
+        <span class="health">{{character.health}}</span>
+      </div>
+    </div>
+    <img [src]="'assets/characters/' + character.art">
+  </div>
+  <div class="no-character" *ngIf="!character">
+    No character
+  </div>
+</div>

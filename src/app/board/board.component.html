@@ -1,0 +1,25 @@
+<div *ngIf="player" class="player">
+  <div class="treasures" [class.rotated]="rotated">
+    <div class="row">
+      <sbb-treasure></sbb-treasure>
+      <sbb-treasure></sbb-treasure>
+    </div>
+    <div class="row">
+      <sbb-treasure></sbb-treasure>
+    </div>
+  </div>
+  <div  class="board" [class.rotated]="rotated">
+    <div class="row">
+      <sbb-character [(character)]="player.board[0]"></sbb-character>
+      <sbb-character [character]="player.board[1]"></sbb-character>
+      <sbb-character [character]="player.board[2]"></sbb-character>
+      <sbb-character [character]="player.board[3]"></sbb-character>
+    </div>
+    <div class="row">
+      <sbb-character [character]="player.board[4]"></sbb-character>
+      <sbb-character [character]="player.board[5]"></sbb-character>
+      <sbb-character [character]="player.board[6]"></sbb-character>
+    </div>
+  </div>
+</div>
+

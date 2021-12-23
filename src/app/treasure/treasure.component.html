@@ -1,0 +1,9 @@
+<div class="treasure-container">
+  <div *ngIf="treasure">
+    {{treasure.name}}
+    <img [src]="'assets/characters/' + treasure.art">
+  </div>
+  <div class="no-treasure" *ngIf="!treasure">
+    No treasure
+  </div>
+</div>

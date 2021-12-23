@@ -1,0 +1,20 @@
+<article>
+  <header>Edit Character</header>
+  <div>
+    <label for="character">Character</label>
+    <select id="character" required>
+      <option value="" selected>No character</option>
+      <option *ngFor="let char of characters" [value]="char">{{char.name}}</option>
+    </select>
+    <fieldset>
+      <label for="golden">
+        <input type="checkbox" id="golden" name="golden">
+        Golden
+      </label>
+    </fieldset>
+  </div>
+  <footer class="flex-row space-between">
+    <a role="button" class="secondary" (click)="close(undefined)">Cancel</a>
+    <a role="button" [class.disabled]="!isValid()" (click)="save()">Create</a>
+  </footer>
+</article>

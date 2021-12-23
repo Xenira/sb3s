@@ -1,0 +1,25 @@
+.player {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+}
+
+.treasures {
+  display: flex;
+  flex-direction: column;
+}
+
+.rotated {
+  flex-direction: column-reverse;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

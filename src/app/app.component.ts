@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sb3s';
+
+  public fight() {
+    console.log('Fight started');
+  }
 }

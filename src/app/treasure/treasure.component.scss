@@ -1,0 +1,26 @@
+$width: 100px;
+$height: 100px;
+
+div.treasure-container {
+  width: $width;
+  height: $height;
+  color: white;
+  position: relative;
+  border: 1px solid black;
+  margin: 4px;
+
+  .no-treasure {
+    background-color: slategray;
+    width: $width;
+    height: $height;
+  }
+
+  img {
+    width: $width;
+    height: $height;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}

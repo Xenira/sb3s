@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@picocss/pico/scss/pico.scss";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+
+.h100 {
+  height: 100%;
+}
