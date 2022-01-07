@@ -6,3 +6,11 @@
 .h100 {
   height: 100%;
 }
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 768px,
+  xl: 1200px,
+);
