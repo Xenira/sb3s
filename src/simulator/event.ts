@@ -1,12 +1,29 @@
+import { Battle } from "./battle";
+import { Queue } from "./queue";
 
-enum EventType {
+
+
+
+
+
+
+
+export enum EventType {
   SLAY,
   CHARACTER_DEATH,
   CHARACTER_SUMMON,
-  STAT_GAIN
+  STAT_GAIN,
+  START_PLAYER,
+  ATTACK,
+  PLAYER_ATTACK
 }
-interface IEvent<T> {
+
+export interface IEventData {
+  battle: Battle
+}
+
+export interface IEvent {
   type: EventType,
-  data: T,
-  execute: () => void
+  data: IEventData,
+  execute: (queue: Queue) => void
 }
